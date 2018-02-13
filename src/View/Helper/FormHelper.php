@@ -3,7 +3,7 @@ namespace SweetAlertHelper\View\Helper;
 
 use Cake\View\Helper\FormHelper as BaseHelper;
 
-class FormHelper extends FormHelper
+class FormHelper extends BaseHelper
 {
 	protected function _confirm($message, $okCode, $cancelCode = '', $options = []){
         $confirm = "if (confirm({$message})) { {$okCode} } {$cancelCode}";

@@ -17,7 +17,7 @@ class FormHelperTest extends TestCase
      * @var \SweetAlertHelper\View\Helper\FormHelper
      */
     public $Form;
-    
+
     /**
      * setUp method
      *
@@ -29,7 +29,7 @@ class FormHelperTest extends TestCase
         $view = new View();
         $this->Form = new FormHelper($view);
     }
-    
+
     /**
      * tearDown method
      *
@@ -38,10 +38,10 @@ class FormHelperTest extends TestCase
     public function tearDown()
     {
         unset($this->Form);
-        
+
         parent::tearDown();
     }
-    
+
     /**
      * Test initial setup
      *

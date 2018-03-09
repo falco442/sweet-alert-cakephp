@@ -14,13 +14,13 @@ class HtmlHelper extends BaseHelper
             'type'                => 'error'
         ];
         $confirm = "(function(e,obj){ e.preventDefault(); e.stopPropagation(); swal(".json_encode($swal).").then(function(res){ if(res.value){ window.location.href = obj.getAttribute('href'); } }); })(event,this)";
-        
+
         // We cannot change the key here in 3.x, but the behavior is inverted in this case
         $escape = isset($options['escape']) && $options['escape'] === false;
         if ($escape) {
             $confirm = h($confirm);
         }
-        
+
         return $confirm;
     }
 }

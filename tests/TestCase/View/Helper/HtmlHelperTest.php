@@ -16,7 +16,7 @@ class HtmlHelperTest extends TestCase
      * @var \SweetAlertHelper\View\Helper\HtmlHelper
      */
     public $Html;
-    
+
     /**
      * setUp method
      *
@@ -28,7 +28,7 @@ class HtmlHelperTest extends TestCase
         $view = new View();
         $this->Html = new HtmlHelper($view);
     }
-    
+
     /**
      * tearDown method
      *
@@ -37,10 +37,10 @@ class HtmlHelperTest extends TestCase
     public function tearDown()
     {
         unset($this->Html);
-        
+
         parent::tearDown();
     }
-    
+
     /**
      * Test initial setup
      *

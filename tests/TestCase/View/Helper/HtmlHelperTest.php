@@ -1,7 +1,7 @@
 <?php
 namespace SweetAlertHelper\Test\TestCase\View\Helper;
 
-use App\View\Helper\ProvaHelper;
+use SweetAlertHelper\View\Helper\HtmlHelper;
 use Cake\TestSuite\TestCase;
 use Cake\View\View;
 
@@ -28,8 +28,8 @@ class HtmlHelperTest extends TestCase{
 		$this->Html = new HtmlHelper($view);
 	}
 	
-	public function testPostLink(){
-		$result = $this->Html->postLink("test");
+	public function testLink(){
+		$result = $this->Html->link("test");
 		$strings[] = "onclick";
 		$strings[] = "a href";
 		$strings[] = "test";

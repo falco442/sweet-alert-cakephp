@@ -1,7 +1,7 @@
 <?php
 namespace SweetAlertHelper\Test\TestCase\View\Helper;
 
-use App\View\Helper\ProvaHelper;
+use SweetAlertHelper\View\Helper\FormHelper;
 use Cake\TestSuite\TestCase;
 use Cake\View\View;
 
@@ -29,8 +29,8 @@ class FormHelperTest extends TestCase{
 	}
 	
 	
-	public function testLink(){
-		$result = $this->Html->link("test");
+	public function testPostLink(){
+		$result = $this->Form->postLink("test");
 		$strings[] = "onclick";
 		$strings[] = "a href";
 		$strings[] = "test";

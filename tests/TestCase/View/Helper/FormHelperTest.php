@@ -1,4 +1,5 @@
 <?php
+
 namespace SweetAlertHelper\Test\TestCase\View\Helper;
 
 use SweetAlertHelper\View\Helper\FormHelper;
@@ -27,23 +28,7 @@ class FormHelperTest extends TestCase{
 		$view = new View();
 		$this->Form = new FormHelper($view);
 	}
-	
-	
-	public function testPostLink(){
-		$result = $this->Form->postLink("test");
-		$strings[] = "onclick";
-		$strings[] = "a href";
-		$strings[] = "test";
-		$strings[] = "onclick";
-		
-		$this->assertNotEmpty($result);
-		
-		foreach($strings as $string){
-			$this->assertContains($string,$result);
-		}
-	}
-	
-	
+
 	/**
 	* tearDown method
 	*

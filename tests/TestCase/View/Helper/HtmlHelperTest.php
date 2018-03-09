@@ -27,22 +27,7 @@ class HtmlHelperTest extends TestCase{
 		$view = new View();
 		$this->Html = new HtmlHelper($view);
 	}
-	
-	public function testLink(){
-		$result = $this->Html->link("test");
-		$strings[] = "onclick";
-		$strings[] = "a href";
-		$strings[] = "test";
-		$strings[] = "onclick";
-		
-		$this->assertNotEmpty($result);
-		
-		foreach($strings as $string){
-			$this->assertContains($string,$result);
-		}
-	}
-	
-	
+
 	/**
 	* tearDown method
 	*

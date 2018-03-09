@@ -7,7 +7,7 @@ You can install this plugin into your CakePHP application using [composer](http:
 The recommended way to install composer packages is:
 
 ```
-composer require falco442/SweetAlertHelper
+composer require falco442/cakephp-3-sweet-alert-helper
 ```
 # Usage
 In your `src/View/AppView.php`, put the helpers
